@@ -1,0 +1,45 @@
+<!doctype html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>字段拆分合同实验室 · pointwise.segment</title>
+    <link rel="stylesheet" href="/styles.css" />
+    <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24'><path d='M4 8h13l-3-3M20 16H7l3 3' fill='none' stroke='%23f0efec' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'/></svg>" />
+  </head>
+  <body>
+    <div class="app">
+      <header class="topbar">
+        <div class="brand">
+          <span class="brand-mark" aria-hidden="true"><svg viewBox="0 0 24 24" width="19" height="19" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="M4 8h13l-3-3M20 16H7l3 3"/></svg></span>
+          <div>
+            <h1>字段拆分合同实验室</h1>
+            <p class="brand-sub"><code>pointwise.segment</code> · 一个旧字段拆成两个新字段 · 有损迁移的可审计演练</p>
+          </div>
+        </div>
+        <div class="topbar-actions">
+          <span class="live"><span class="live-dot"></span>本地模拟</span>
+          <button class="btn btn-ghost btn-sm" id="refresh">刷新</button>
+          <button class="btn btn-ghost btn-sm" id="reset">重置演示</button>
+        </div>
+      </header>
+
+      <nav class="tabs" id="tabs" role="tablist" aria-label="工作区"></nav>
+
+      <main id="view" class="view" aria-live="polite"></main>
+
+      <footer class="foot">
+        <span>所有数据为虚构演示数据；内置 ISO 3166 表是子集，只用于演示“命中才证明、未命中转人工”。</span>
+        <span>v1 列永久保留，任何迁移都不会改写它。</span>
+      </footer>
+    </div>
+
+    <dialog id="dialog" class="dialog">
+      <div id="dialog-body"></div>
+    </dialog>
+
+    <div id="toast" class="toast" role="status" hidden></div>
+
+    <script type="module" src="/app.js"></script>
+  </body>
+</html>

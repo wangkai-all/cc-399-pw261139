@@ -1,0 +1,17 @@
+{
+  "name": "split-field-contract-lab",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "description": "Working simulation of a lossy legacy-field split across two published contracts, with preflight, operator resolution, dual-contract delivery, late acks and an interrupted backfill.",
+  "scripts": {
+    "start": "node src/server.js",
+    "seed": "node src/cli.js seed",
+    "reset": "node src/cli.js reset",
+    "demo": "node src/cli.js demo",
+    "test": "node --test test/*.test.js"
+  },
+  "engines": {
+    "node": ">=22.5"
+  }
+}
